@@ -13,6 +13,6 @@ class Admin extends Model
         'title',
         'storyline',
         'image',
-        'image',
+        'description',
     ];
 }
