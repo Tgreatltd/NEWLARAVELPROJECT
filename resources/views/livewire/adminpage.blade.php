@@ -1,6 +1,6 @@
 <div class="container mx-auto mt-8">
     <div>
-        <form wire:submit.prevent="upload"  enctype="multipart/form-data">
+        <form wire:submit.prevent="saveImage"  enctype="multipart/form-data">
             @csrf
             @if (session()->has('success'))
             <h1>{{session()->get('success')}}</h1>
