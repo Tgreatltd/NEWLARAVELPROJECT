@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,4 +12,8 @@
       @livewire('navbar')
 </div>
 </body>
-</html>
+</html> --}}
+
+<x-app-layout>
+    <h1>name</h1>
+</x-app-layout>
