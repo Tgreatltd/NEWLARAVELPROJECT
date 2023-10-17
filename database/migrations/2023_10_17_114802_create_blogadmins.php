@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('storyline');
             $table->string('description');
             $table->string('image');
-            $table->string('comment');
             $table->timestamps();
         });
     }
