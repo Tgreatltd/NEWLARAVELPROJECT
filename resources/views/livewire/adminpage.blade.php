@@ -1,10 +1,10 @@
 <div class="container mx-auto mt-8">
     <div>
+        @if (session()->has('success'))
+        <h1 class="text-blue-700">{{session()->get('success')}}</h1>
+    @endif
         <form wire:submit.prevent="saveImage"  enctype="multipart/form-data">
             @csrf
-            @if (session()->has('success'))
-            <h1>{{session()->get('success')}}</h1>
-        @endif
             <div class="mb-4">
                 <label for="title" class="block text-gray-700 text-sm font-bold mb-2 w-full">Title</label>
                 <input wire:model="title" type="text" name="title" id="title" class="w-full py-2 px-3 border rounded" placeholder="Enter a title">
@@ -14,18 +14,18 @@
             </div>
     
             <div class="mb-4">
-                <label for="storyline" class="block text-gray-700 text-sm font-bold mb-2 w-full">Storyline</label>
-                <input wire:model='storyline' type="text" name="storyline" id="storyline" class="w-full py-2 px-3 border rounded" placeholder="Enter a storyline">
-                @error('storyline')
+                <label for="storyline" class="block text-gray-700 text-sm font-bold mb-2 w-full">Description</label>
+                <input wire:model="description" name="description" id="description"  class="w-full py-2 px-3 border rounded" placeholder="Enter description">
+                @error('description')
                 <small>{{$message}}</small>
             @enderror
             </div>
            
     
             <div class="mb-4">
-                <label for="description" class="block text-gray-700 text-sm font-bold mb-2 w-full">Description</label>
-                <textarea wire:model="description" name="description" id="description" class="w-full py-2 px-3 border rounded" rows="4" placeholder="Enter a description"></textarea>
-                @error('description')
+                <label for="description" class="block text-gray-700 text-sm font-bold mb-2 w-full">Storyline</label>
+                <textarea wire:model="storyline" name="storyline" id="storyline" class="w-full py-2 px-3 border rounded" rows="4" placeholder="Enter storyline"></textarea>
+                @error('storyline')
                 <small>{{$message}}</small> 
              @enderror
             </div>
