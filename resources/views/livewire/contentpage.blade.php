@@ -1,18 +1,16 @@
 <div>
     <div class="container mx-auto max-w-screen-lg mt-8">
-        <div class="flex ">
+        <div class="flex flex-wrap space-x-4">
             @foreach ($users as $user)
-            <div class="w-1/2 h-40">
-                <!-- Left Column -->
-            <div><img style="height: 100px; width:100px" src="{{ asset('storage/'. $user->image) }}" alt=""></div>
-             <div>{{$user->title}}</div>
-             <div>{{$user->description}}</div>
-            
+    
+            <div class="w-full sm:w-1/4 md:w-1/6 lg:w-1/4 h-40 bg-blue-500 mb-4 p-4">
+                <div><img style="height: 100px; width:100px" src="{{ asset('storage/'. $user->image) }}" alt=""></div>
+                <div>{{$user->title}}</div>
+                <div>{{$user->storyline}}</div>
+                <div>{{$user->description}}</div>
             </div>
-            {{-- <div class="w-1/2 h-40 bg-green-500">
-                <!-- Right Column -->
-            </div> --}}
-             @endforeach
+
+            @endforeach
         </div>
     </div>
 </div>
