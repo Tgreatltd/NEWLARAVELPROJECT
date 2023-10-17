@@ -7,13 +7,19 @@
     <title>Document</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body style="background-color: rgb(41, 37, 37)">
+<body style="">
     <div class="container mx-auto p-5">
       @livewire('navbar')
 
       <div>
         @livewire('contentpage')
       </div>
+
+      <div>
+        @livewire('custom-event-component')
+      </div>
+
+      @livewire('custom-event-listener-component')
 </div>
 </body>
 </html>
