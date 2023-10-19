@@ -11,5 +11,6 @@
 
             @endforeach
         </div>
+        <div><img   src="{{ asset('storage/') }}" alt=""></div>
     </div>
 </div>
