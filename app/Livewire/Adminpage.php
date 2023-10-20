@@ -20,17 +20,21 @@ class Adminpage extends Component
              'image' => 'image|max:1024' // Adjust validation rules as needed
         ]);
 
-        $this->imageName = $this->image->store('images', 'public');
+        if ($this->imageName = $this->image->store('images', 'public')) {
+            Blogger::create([
+                'title' => $this->title,
+                'storyline' => $this->storyline,
+                'description' => $this->description,
+                'image' => $this->imageName,
+            ]);
+    
+            $this->reset('image');
+            session()->flash('sucess', 'uploaded successfully');
+        }
 
-        Blogger::create([
-            'title' => $this->title,
-            'storyline' => $this->storyline,
-            'description' => $this->description,
-            'image' => $this->imageName,
-        ]);
-
-        $this->reset('image');
-        session()->flash('sucess', 'uploaded successfully');
+       else {
+        session()->flash('error', 'FILL IN THE CORRECT DETAILS');
+       }
     }
 
     public function render()

@@ -3,6 +3,10 @@
         @if (session()->has('success'))
         <h1 class="text-blue-700">{{session()->get('success')}}</h1>
     @endif
+
+    @if (session()->has('error'))
+    <h1 class="text-blue-700">{{session()->get('error')}}</h1>
+@endif
         <form wire:submit.prevent="saveImage"  enctype="multipart/form-data">
             @csrf
             <div class="mb-4">
