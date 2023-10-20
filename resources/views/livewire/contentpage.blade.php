@@ -4,7 +4,7 @@
             @foreach ($users as $user)
     
             <div class="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 h-[46vh] bg-blue-100 mb-4 p-4">
-                <a href="{{url('')}}">
+                <a href="{{url('storyline/'.$user->id)}}">
                     <div><img   src="{{ asset('storage/'. $user->image) }}" alt=""></div>
                     <h1 class="text-lg">{{$user->title}}</h1>
                      <h1 style="color: rgb(0, 253, 63)" class="text-lg">{{$user->description}}</h1>

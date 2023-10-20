@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'welcome');
 Route::view('teegreat', 'landingpage');
 Route::view('admin', 'theadminpage');
+Route::view('storyline/{id}', 'storypage');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
