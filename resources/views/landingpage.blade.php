@@ -15,9 +15,9 @@
         @livewire('contentpage')
       </div>
 
-      <div>
+      {{-- <div>
         @livewire('custom-event-component')
-      </div>
+      </div> --}}
 
       {{-- @livewire('custom-event-listener-component') --}}
 </div> 
