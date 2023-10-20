@@ -13,7 +13,7 @@
 
       <div>
         @livewire('contentpage')
-      </div>
+      </div> 
 
       {{-- <div>
         @livewire('custom-event-component')
