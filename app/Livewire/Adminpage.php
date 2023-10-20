@@ -30,7 +30,7 @@ class Adminpage extends Component
         ]);
 
         $this->reset('image');
-        session()->flash('sucess', 'uploaded successfully');
+        session()->flash('success', 'uploaded successfully');
     }
 
     public function render()
