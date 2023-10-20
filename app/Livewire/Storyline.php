@@ -8,8 +8,9 @@ use Livewire\Component;
 class Storyline extends Component
 
 {
-   public $storyId;
+   public $storyId, $id;
 public function mount($id){
+    $this->id = $id;
  $this->storyId=Blogger::find($id);
 }
 
