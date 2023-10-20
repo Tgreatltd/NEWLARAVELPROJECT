@@ -19,7 +19,7 @@
         @livewire('custom-event-component')
       </div>
 
-      @livewire('custom-event-listener-component')
+      {{-- @livewire('custom-event-listener-component') --}}
 </div> 
 </body>
 </html>
