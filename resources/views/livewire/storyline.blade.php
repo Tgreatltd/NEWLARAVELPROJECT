@@ -1,3 +1,3 @@
 <div>
-    <div>{{$storyline}}</div>
+    <div>{{$storyId}}</div>
 </div>
