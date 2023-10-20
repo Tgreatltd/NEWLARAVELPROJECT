@@ -20,6 +20,6 @@
       </div>
 
       @livewire('custom-event-listener-component')
-</div> 
+</div>
 </body>
 </html>
