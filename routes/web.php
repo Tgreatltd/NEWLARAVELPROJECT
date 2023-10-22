@@ -20,7 +20,7 @@ Route::view('storyline/{id}', 'storypage');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
-    ->name('dashboard');
+    ->name('dashboard'); 
 
 Route::view('profile', 'profile')
     ->middleware(['auth'])
