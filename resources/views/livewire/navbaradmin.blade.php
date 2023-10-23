@@ -12,24 +12,24 @@
                            <a href="">TEEGREAT'S BLOG</a>
                        </div>
                        <div class="hidden space-x-12 sm:-my-px sm:ml-20 sm:flex">
-                           <x-nav-link :href="route('musicadmin')" :active="request()->routeIs('musicadmin')" wire:navigate>
-                               {{ __('MUSIC') }}
+                           <x-nav-link >
+                               <a href="{{url('musicadmin')}}" wire:navigate>{{ __('MUSIC') }}</a>
                            </x-nav-link>
            
                            <x-nav-link>
-                               {{ __('STORIES') }}
+                              <a href=""> {{ __('STORIES') }}</a>
                            </x-nav-link>
            
                            <x-nav-link>
-                               {{ __('NEWS') }}
+                               <a href="">{{ __('NEWS') }}</a>
                            </x-nav-link>
            
                            <x-nav-link>
-                               {{ __('SPORT') }}
+                               <a href="">{{ __('SPORT') }}</a>
                            </x-nav-link> 
                         
                             <x-nav-link>
-                                {{ __('Contact Us') }}
+                                <a href="">{{ __('Contact Us') }}</a>
                             </x-nav-link>
                            
                        </div>
