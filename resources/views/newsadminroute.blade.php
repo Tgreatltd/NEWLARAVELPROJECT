@@ -9,7 +9,8 @@
 </head>
 <body style="">
     <div class="container mx-auto p-5">
-     <div> @livewire('navbar')</div>
+     {{-- <div> @livewire('navbar')</div> --}}
+     <div> @livewire('navbaradmin')</div>
 
      <div> @livewire('newsadmin')</div>
 
