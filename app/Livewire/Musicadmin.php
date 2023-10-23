@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Music;
+use App\Models\Musicblogger;
 use Livewire\Component;
 use Livewire\Features\SupportFileUploads\WithFileUploads;
 
@@ -23,7 +24,7 @@ class Musicadmin extends Component
 
         $this->imageName = $this->image->store('images', 'public');
 
-        Music::create([
+        Musicblogger::create([
             'title' => $this->title,
             'storyline' => $this->storyline,
             'description' => $this->description,
