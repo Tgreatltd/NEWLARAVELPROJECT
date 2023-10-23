@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'welcome');
 Route::view('teegreat', 'landingpage');
 Route::view('admin', 'adminlanding');
+Route::view('sportadmin', 'sportsadminroute');
+Route::view('musicadmin', 'musicadminroute');
+Route::view('newsadmin', 'newsadminroute');
+
 Route::view('storyline/{id}', 'storypage');
 
 Route::view('dashboard', 'dashboard')
