@@ -17,19 +17,19 @@
                            </x-nav-link>
            
                            <x-nav-link>
-                              <a href=""> {{ __('STORIES') }}</a>
+                              <a href="{{route('admin')}}" wire:navigate> {{ __('STORIES') }}</a>
                            </x-nav-link>
            
                            <x-nav-link>
-                               <a href="">{{ __('NEWS') }}</a>
+                               <a href="{{route('newsadmin')}}" wire:navigate>{{ __('NEWS') }}</a>
                            </x-nav-link>
            
                            <x-nav-link>
-                               <a href="">{{ __('SPORT') }}</a>
+                               <a href="{{route('sportadmin')}}" wire:navigate>{{ __('SPORT') }}</a>
                            </x-nav-link> 
                         
                             <x-nav-link>
-                                <a href="">{{ __('Contact Us') }}</a>
+                                <a href="" wire:navigate>{{ __('Contact Us') }}</a>
                             </x-nav-link>
                            
                        </div>
