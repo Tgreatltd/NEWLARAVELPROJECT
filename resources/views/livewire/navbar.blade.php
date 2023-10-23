@@ -11,19 +11,19 @@
                        <a href="">TEEGREAT'S BLOG</a>
                    </div>
                    <div class="hidden space-x-12 sm:-my-px sm:ml-20 sm:flex">
-                       <x-nav-link>
+                       <x-nav-link :href="route('musicpage')" :active="request()->routeIs('musicpage')" wire:navigate>
                            {{ __('MUSIC') }}
                        </x-nav-link>
        
-                       <x-nav-link>
+                       <x-nav-link :href="route('teegreat')" :active="request()->routeIs('teegreat')" wire:navigate>
                            {{ __('STORIES') }}
                        </x-nav-link>
        
-                       <x-nav-link>
+                       <x-nav-link :href="route('newspage')" :active="request()->routeIs('newspagepage')" wire:navigate>
                            {{ __('NEWS') }}
                        </x-nav-link>
        
-                       <x-nav-link>
+                       <x-nav-link :href="route('sportpage')" :active="request()->routeIs('sportpage')" wire:navigate>
                            {{ __('SPORT') }}
                        </x-nav-link> 
                     
