@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'welcome');
-Route::view('teegreat', 'landingpage');
-Route::view('admin', 'adminlanding');
-Route::view('sportadmin', 'sportsadminroute');
-Route::view('musicadmin', 'musicadminroute');
-Route::view('newsadmin', 'newsadminroute');
+Route::view('teegreat', 'landingpage')->name('teegreat');
+Route::view('admin', 'adminlanding')->name('admin');
+Route::view('sportadmin', 'sportsadminroute')->name('sportadmin');
+Route::view('musicadmin', 'musicadminroute')->name('musicadmin');
+Route::view('newsadmin', 'newsadminroute')->name('newsadmin');
 
 Route::view('storyline/{id}', 'storypage');
 

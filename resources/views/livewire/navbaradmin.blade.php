@@ -13,7 +13,7 @@
                        </div>
                        <div class="hidden space-x-12 sm:-my-px sm:ml-20 sm:flex">
                            <x-nav-link >
-                               <a href="{{url('musicadmin')}}" wire:navigate>{{ __('MUSIC') }}</a>
+                               <a href="{{route('musicadmin')}}" wire:navigate>{{ __('MUSIC') }}</a>
                            </x-nav-link>
            
                            <x-nav-link>
