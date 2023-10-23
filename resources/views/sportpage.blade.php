@@ -10,7 +10,9 @@
 <body>
     <div class="container mx-auto p-5">
         @livewire('navbar')
-      @livewire('sports')
+     <div class="mt-3">
+        @livewire('sports')
+     </div>
 </div>
 </body>
 </html>
