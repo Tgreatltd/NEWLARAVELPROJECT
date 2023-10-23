@@ -2,10 +2,38 @@
 
 namespace App\Livewire;
 
+use App\Models\Music;
 use Livewire\Component;
+use Livewire\Features\SupportFileUploads\WithFileUploads;
 
 class Musicadmin extends Component
+
 {
+    use WithFileUploads;
+    public $storyline, $title, $description, $image, $imageName;
+    
+    public function saveImage()
+    {
+        $this->validate([
+            'title' => 'required|string',
+            'storyline' => 'required|string',
+            'description' => 'required|string',
+             'image' => 'image|max:1024' // Adjust validation rules as needed
+        ]);
+
+        $this->imageName = $this->image->store('images', 'public');
+
+        Music::create([
+            'title' => $this->title,
+            'storyline' => $this->storyline,
+            'description' => $this->description,
+            'image' => $this->imageName,
+        ]);
+
+        $this->reset('image');
+        session()->flash('success', 'uploaded successfully');
+    }
+
     public function render()
     {
         return view('livewire.musicadmin');
