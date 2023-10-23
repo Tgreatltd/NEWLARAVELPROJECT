@@ -7,13 +7,9 @@ use Livewire\Component;
 
 class Music extends Component
 {
-    public $storyId, $id;
-    public function mount($id){
-        $this->id = $id;
-     $this->storyId=ModelsMusic::find($id);
-    }
+   
     public function render()
     {
-        return view('livewire.music');
+        return view('livewire.music',['users'=>ModelsMusic::all()]);
     }
 }
