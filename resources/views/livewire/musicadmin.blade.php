@@ -1,5 +1,6 @@
 <div>
     <div class="container mx-auto mt-8">
+        <h1 class="text-red-800">MUSIC ADMIN PAGE</h1>
         <div>
             @if (session()->has('success'))
             <h1 class="text-blue-700">{{session()->get('success')}}</h1>
