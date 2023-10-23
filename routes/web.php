@@ -15,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
 Route::view('teegreat', 'landingpage')->name('teegreat');
+Route::view('musicpage', '')->name('teegreat');
+
+
 Route::view('admin', 'adminlanding')->name('admin');
 Route::view('sportadmin', 'sportsadminroute')->name('sportadmin');
 Route::view('musicadmin', 'musicadminroute')->name('musicadmin');
