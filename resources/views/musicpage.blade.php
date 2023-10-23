@@ -10,7 +10,7 @@
 <body>
     <div class="container mx-auto p-5">
         @livewire('navbar')
-      @livewire('music')
+      @livewire('music', ['id'=>$id])
 </div>
 </body>
 </html>

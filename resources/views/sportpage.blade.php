@@ -11,7 +11,7 @@
     <div class="container mx-auto p-5">
         @livewire('navbar')
      <div class="mt-3">
-        @livewire('sports')
+        @livewire('sports',['id'=>$id])
      </div>
 </div>
 </body>
