@@ -1,4 +1,4 @@
-<div>
+<div class="container mx-auto p-5">
     {{-- <div>{{$storyId}}</div> --}}
     @if ($storyId)
     <div><img id="image" class="h-[20vh]" src="{{ asset('storage/'. $storyId->image) }}" alt=""></div>
