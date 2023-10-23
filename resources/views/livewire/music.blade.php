@@ -12,4 +12,5 @@
         <p>Story not found.</p>
     @endif
     </div>
+
 </div>
