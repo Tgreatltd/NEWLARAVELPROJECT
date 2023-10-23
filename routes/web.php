@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// user pages routes
 
 Route::view('/', 'welcome');
 Route::view('teegreat', 'landingpage')->name('teegreat');
@@ -19,6 +20,7 @@ Route::view('musicpage', 'musicpage')->name('musicpage');
 Route::view('newspage', 'newspage')->name('newspage');
 Route::view('sportpage', 'sportpage')->name('sportpage');
 
+// admin pages routes
 
 Route::view('admin', 'adminlanding')->name('admin');
 Route::view('sportadmin', 'sportsadminroute')->name('sportadmin');
