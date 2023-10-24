@@ -1,6 +1,6 @@
 <div>
     {{-- <div class="container mx-auto max-w-screen-lg mt-8"></div> --}}
-    <div class="container mx-auto mt-8 p-2">
+    <div class="container max-w-screen-lg mx-auto mt-8 ">
         <div class="flex flex-wrap space-x-4">
             @foreach ($users as $user)
     
