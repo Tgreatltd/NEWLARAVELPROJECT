@@ -1,13 +1,13 @@
 <div>
-    <div class="container mx-auto max-w-screen-lg mt-8">
+    <div class="container mx-auto  mt-8">
         <div class="flex flex-wrap space-x-4">
             @foreach ($users as $user)
     
-            <div class="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 h-[40vh] bg-black-500 mb-4 p-4" >
+            <div class="w-full sm:w-1/3 md:w-1/4 lg:w-1/3 h-[55vh] bg-green-500 mb-4 p-4">
                 <a href="{{url('storyline/'.$user->id)}}" wire:navigate>
-                    <div style="margin-bottom:20px;" class="w-full sm:w-1/3 md:w-1/4 lg:w-1/4"><img    src="{{ asset('storage/'. $user->image) }}" alt=""></div>
-                    <div><h1 class="text-lg">{{$user->title}}</h1></div>
-                  <div> <h1 style="color: rgb(0, 253, 63)" class="text-lg">{{$user->description}}</h1></div>
+                    <div style=" margin-bottom:60px; height:200px; width:100%"><img style="height:200px; width:100%"   src="{{ asset('storage/'. $user->image) }}" alt=""></div>
+                    <div style="margin-bottom:10px;height:50px;width: 100%; border:2px solid black" "><h1 class="text-lg">{{$user->title}}</h1></div>
+                  <div style="width: 100%; height:130px; border:2px solid black"> <h1 class="text-lg">{{$user->description}}</h1></div>
                 </a>
             </div>
 
