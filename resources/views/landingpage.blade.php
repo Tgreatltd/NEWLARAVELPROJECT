@@ -11,7 +11,7 @@
     <div class="container mx-auto p-5">
       @livewire('navbar')
 
-      <div >
+      <div>
         @livewire('contentpage')
       </div> 
 
