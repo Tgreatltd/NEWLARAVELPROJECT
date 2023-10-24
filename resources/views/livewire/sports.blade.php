@@ -7,7 +7,7 @@
                 <div><img   src="{{ asset('storage/'. $user->image) }}" alt=""></div>
                 <h1 class="text-lg">{{$user->title}}</h1>
                  <h1 style="color: rgb(0, 253, 63)" class="text-lg">{{$user->description}}</h1>
-            </a> 
+            </a>
         </div>
 
         @endforeach
