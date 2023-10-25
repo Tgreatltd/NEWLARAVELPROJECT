@@ -10,7 +10,7 @@
                     <div style="margin-bottom:10px;height:50px;width: 100%;"><h1 class="text-lg">{{$user->title}}</h1></div>
                   <div style="width: 100%; height:130px;"> <h1 class="text-lg">{{$user->description}}</h1></div>
                 </a>
-            </div>
+            </div> 
 
             @endforeach
         </div> 
