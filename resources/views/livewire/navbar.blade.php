@@ -25,7 +25,7 @@
        
                        <x-nav-link :href="route('sportpage')" :active="request()->routeIs('sportpage')" wire:navigate>
                            {{ __('SPORT') }}
-                       </x-nav-link>
+                       </x-nav-link> 
                     
                         <x-nav-link>
                             {{ __('Contact Us') }}
