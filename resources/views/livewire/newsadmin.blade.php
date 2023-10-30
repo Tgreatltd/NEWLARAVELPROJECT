@@ -34,7 +34,7 @@
                     @error('storyline')
                     <small>{{$message}}</small>
                  @enderror
-                </div>
+                </div> 
         
         
                 <div class="mb-4">
