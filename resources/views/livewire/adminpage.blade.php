@@ -54,12 +54,12 @@
 
     <table class="min-w-full table">
         <thead>
-            <th>ID</th>
-            <th>TITLE</th>
-            <th>DESCRIPTION</th>
-            <th>STORYLINE</th>
-            <th>IMAGE</th>
-            <th>ACTION</th>
+            <th class="px-4 py-2">ID</th>
+            <th class="px-4 py-2">TITLE</th>
+            <th class="px-4 py-2">DESCRIPTION</th>
+            <th class="px-4 py-2">STORYLINE</th>
+            <th class="px-4 py-2">IMAGE</th>
+            <th class="px-4 py-2">ACTION</th>
         </thead>
         <tbody>
             @foreach ($contents as $content)
@@ -69,7 +69,7 @@
                     <td>{{$content->description}}</td>
                     <td >{{$content->storyline}}</td>
                     <td>{{$content->image}}</td>
-                    <td class="flex">
+                    <td class="flex space-x-2">
                         <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded"><a href="">EDIT</a></button>
                         <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded"><a href="">DELETE</a></button>
                     </td> 
