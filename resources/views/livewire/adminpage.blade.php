@@ -52,7 +52,7 @@
     </div>
     <br><br>
 
-    <table border="2px" width="600px">
+    <table border="2px" >
         <thead>
             <th>ID</th>
             <th>TITLE</th>
@@ -67,8 +67,11 @@
                     <td>{{$content->id}}</td>
                     <td>{{$content->title}}</td>
                     <td>{{$content->description}}</td>
-                    <td>{{$content->storyline}}</td>
-                    <td>{{$content->}}</td>
+                    <td style="width: 200px">{{$content->storyline}}</td>
+                    <td>{{$content->image}}</td>
+                    <td>
+                        <button><a href="">EDIT</a></button>
+                    </td>
                 </tr>
             @endforeach
         </tbody>
