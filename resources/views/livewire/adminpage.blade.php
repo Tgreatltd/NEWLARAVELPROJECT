@@ -63,7 +63,13 @@
         </thead>
         <tbody>
             @foreach ($contents as $content)
-                
+                <tr>
+                    <td>{{$content->id}}</td>
+                    <td>{{$content->title}}</td>
+                    <td>{{$content->description}}</td>
+                    <td>{{$content->storyline}}</td>
+                    <td>{{$content->}}</td>
+                </tr>
             @endforeach
         </tbody>
     </table>
