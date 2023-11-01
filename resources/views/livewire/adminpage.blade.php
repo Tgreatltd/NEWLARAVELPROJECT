@@ -54,12 +54,20 @@
 
     <table border="2px" width="600px">
         <thead>
+            <th>ID</th>
             <th>TITLE</th>
             <th>DESCRIPTION</th>
             <th>STORYLINE</th>
             <th>IMAGE</th>
             <th>ACTION</th>
         </thead>
+        <tbody>
+            <tr>
+               @foreach ($contents as $content)
+                  <td>{{$content->id}}</td> 
+               @endforeach
+            </tr>
+        </tbody>
     </table>
     
 </div>
