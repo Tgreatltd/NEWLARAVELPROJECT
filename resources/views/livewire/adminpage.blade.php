@@ -52,7 +52,7 @@
     </div>
     <br><br>
 
-    <table border="2px" >
+    <table class="min-w-full table">
         <thead>
             <th>ID</th>
             <th>TITLE</th>
