@@ -62,11 +62,9 @@
             <th>ACTION</th>
         </thead>
         <tbody>
-            <tr>
-               @foreach ($contents as $content)
-                  <td>{{$content->id}}</td> 
-               @endforeach
-            </tr>
+            @foreach ($contents as $content)
+                
+            @endforeach
         </tbody>
     </table>
     
