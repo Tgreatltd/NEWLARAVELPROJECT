@@ -67,7 +67,7 @@
                     <td>{{$content->id}}</td>
                     <td>{{$content->title}}</td>
                     <td>{{$content->description}}</td>
-                    <td style="width: 200px">{{$content->storyline}}</td>
+                    <td >{{$content->storyline}}</td>
                     <td>{{$content->image}}</td>
                     <td class="flex">
                         <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded"><a href="">EDIT</a></button>
