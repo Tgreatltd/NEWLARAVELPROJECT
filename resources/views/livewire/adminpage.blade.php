@@ -72,7 +72,7 @@
                     <td class="flex space-x-2">
                         <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded"><a href="">EDIT</a></button>
                         <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded"><a href="">DELETE</a></button>
-                    </td> 
+                    </td>
                 </tr> 
             @endforeach
         </tbody>
