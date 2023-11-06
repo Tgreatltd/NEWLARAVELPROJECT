@@ -27,8 +27,12 @@ Route::view('admin', 'adminlanding')->name('admin');
 Route::view('sportadmin', 'sportsadminroute')->name('sportadmin');
 Route::view('musicadmin', 'musicadminroute')->name('musicadmin');
 Route::view('newsadmin', 'newsadminroute')->name('newsadmin');
-
 Route::view('storyline/{id}', 'storypage')->name('storyline');
+
+// editing adminpage routes
+Route::view('storyedit', 'editStoriesadmin')->name('storyedit');
+
+
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
