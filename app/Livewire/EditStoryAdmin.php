@@ -12,6 +12,12 @@ class EditStoryAdmin extends Component
     public function mount($id){
      $this->id=$id;
      $this->storyId=Blogger::find($id);
+
+     if ($this->storyId) {
+        $this->validate([
+
+        ]);
+     }
     }
 
     public function render()
