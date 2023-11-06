@@ -30,7 +30,7 @@ Route::view('newsadmin', 'newsadminroute')->name('newsadmin');
 Route::view('storyline/{id}', 'storypage')->name('storyline');
 
 // editing adminpage routes
-Route::view('storyedit', 'editStoriesadmin')->name('storyedit');
+Route::view('storyedit/{id}', 'editStoriesadmin')->name('storyedit');
 
 
 
