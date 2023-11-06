@@ -8,7 +8,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body style="">
-    <div class="container mx-auto p-5">
+    <div class="container mx-auto p-5 bg-gray-200">
      <div> @livewire('navbaradmin')</div>
 
      <div> @livewire('adminpage')</div>
