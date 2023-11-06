@@ -13,7 +13,8 @@
            @if ($storyId)
            <div class="mb-4">
             <label for="title" class="block text-gray-700 text-sm font-bold mb-2 w-full">Title</label>
-            <input wire:model="title" type="text" name="title" id="title" class="w-full py-2 px-3 border rounded" placeholder="Enter a title">
+            <input wire:model="title" type="text" name="title" id="title" class="w-full py-2 px-3 border rounded"
+             placeholder="Enter a title" value="{{$storyId->title}}">
             @error('title')
                 <small>{{$message}}</small>
             @enderror
