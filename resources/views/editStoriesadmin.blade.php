@@ -11,7 +11,7 @@
     <div class="container mx-auto p-5">
         @livewire('navbar')
      <div class="mt-3">
-        @livewire('edit-story-admin')
+        @livewire('edit-story-admin', ['id'=>$id])
      </div>
 </div>
 </body>
