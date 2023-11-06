@@ -25,7 +25,7 @@
                                {{ __('NEWS') }}
                            </x-nav-link>
            
-                           <x-nav-link :href="route('sportadmin')" :active="request()->routeIs('sportsadmin')" wire:navigate>
+                           <x-nav-link :href="route('sportadmin')" :active="request()->routeIs('sportadmin')" wire:navigate>
                                <a href="{{route('sportadmin')}}" wire:navigate>{{ __('SPORT') }}</a>
                            </x-nav-link> 
                         
