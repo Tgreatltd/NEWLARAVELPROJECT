@@ -9,7 +9,9 @@
 </head>
 <body style="background-color:black">
     <div class="container mx-auto p-5">
-     @livewire('navbaradmin')
+    <div class="mt-3">
+        @livewire('navbaradmin')
+    </div>
      <div class="mt-3">
         @livewire('edit-story-admin', ['id'=>$id]);
      </div>

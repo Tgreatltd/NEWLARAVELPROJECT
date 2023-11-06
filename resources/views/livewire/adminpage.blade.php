@@ -54,7 +54,7 @@
 
     <table class="min-w-full table">
         <thead>
-            <th class="px-4 py-2">ID</th>
+            <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-xs leading-4 text-gray-800 uppercase tracking-wider">ID</th>
             <th class="px-4 py-2">TITLE</th>
             <th class="px-4 py-2">DESCRIPTION</th>
             <th class="px-4 py-2">STORYLINE</th>
@@ -64,13 +64,13 @@
         <tbody>
             @foreach ($contents as $content)
                 <tr>
-                    <td class="px-4 py-2">{{$content->id}}</td>
-                    <td class="px-4 py-2">{{$content->title}}</td>
-                    <td class="px-4 py-2">{{$content->description}}</td>
-                    <td class="px-4 py-2" >{{$content->storyline}}</td>
+                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-500">{{$content->id}}</td>
+                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-500">{{$content->title}}</td>
+                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-500">{{$content->description}}</td>
+                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-500">{{$content->storyline}}</td>
                     {{-- <td class="px-4 py-2">{{$content->image}}</td> --}}
-                    <td class="px-4 py-2"><img style="height:50px; width:50px"src="{{ asset('storage/'. $content->image) }}" alt=""></td>
-                    <td class="flex space-x-2">
+                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-500"><img style="height:50px; width:50px"src="{{ asset('storage/'. $content->image) }}" alt=""></td>
+                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-500 flex space-x-2">
                         <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded"><a href="{{url('storyedit/'.$content->id)}}">EDIT</a></button>
                         <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded"><a href="">DELETE</a></button>
                     </td> 
