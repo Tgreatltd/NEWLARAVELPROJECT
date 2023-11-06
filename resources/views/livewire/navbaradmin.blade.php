@@ -13,7 +13,7 @@
                        </div>
                        <div class="hidden space-x-12 sm:-my-px sm:ml-20 sm:flex">
                            <x-nav-link :href="route('musicadmin')" :active="request()->routeIs('musicadmin')" wire:navigate>
-                               <a href="{{route('musicadmin')}}" wire:navigate>{{ __('MUSIC') }}</a>
+                             {{ __('MUSIC') }}
                            </x-nav-link>
            
                            <x-nav-link :href="route('admin')" :active="request()->routeIs('admin')" wire:navigate>
