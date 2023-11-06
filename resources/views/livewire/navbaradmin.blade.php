@@ -52,25 +52,25 @@
             <!-- Responsive Navigation Menu -->
         <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
             <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('musicadmin')" :active="request()->routeIs('musicadmin')" wire:navigate>
                     {{ __('MUSIC') }}
                 </x-responsive-nav-link>
             </div>
                 
             <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('storyadmin')" :active="request()->routeIs('storyadmin')" wire:navigate>
                     {{ __('STORIES') }}
                 </x-responsive-nav-link>
             </div>
     
             <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('newsadmin')" :active="request()->routeIs('newsadmin')" wire:navigate>
                     {{ __('NEWS') }}
                 </x-responsive-nav-link>
             </div>
     
             <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('sportadmin')" :active="request()->routeIs('sportadmin')" wire:navigate>
                     {{ __('SPORT') }}
                 </x-responsive-nav-link>
             </div>
