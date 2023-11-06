@@ -13,7 +13,14 @@ class EditStoryAdmin extends Component
      $this->id=$id;
      $this->storyId=Blogger::find($id);
 
-     
+    //  if ($this->storyId) {
+    //     $this->validate([
+    //         'title' => 'required|string',
+    //         'storyline' => 'required|string',
+    //         'description' => 'required|string',
+    //          'image' => 'image|max:1024' // Adjust validation rules as needed
+    //     ]);
+    //  }
     }
 
     public function render()

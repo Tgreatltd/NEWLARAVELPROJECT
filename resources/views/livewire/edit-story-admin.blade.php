@@ -8,7 +8,7 @@
     @if (session()->has('error'))
     <h1 class="text-blue-700">{{session()->get('error')}}</h1>
 @endif
-        <form wire:submit.prevent="saveImage"  enctype="multipart/form-data">
+        <form wire:submit.prevent="update"  enctype="multipart/form-data">
             @csrf
            @if ($storyId)
            <div class="mb-4">
