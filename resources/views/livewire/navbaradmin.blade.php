@@ -12,7 +12,7 @@
                            <a href="">TEEGREAT'S BLOG</a>
                        </div>
                        <div class="hidden space-x-12 sm:-my-px sm:ml-20 sm:flex">
-                           <x-nav-link >
+                           <x-nav-link :href="route('musicadmin')" :active="request()->routeIs('musicadmin')" wire:navigate>
                                <a href="{{route('musicadmin')}}" wire:navigate>{{ __('MUSIC') }}</a>
                            </x-nav-link>
            
@@ -26,11 +26,11 @@
                            </x-nav-link>
            
                            <x-nav-link :href="route('sportadmin')" :active="request()->routeIs('sportadmin')" wire:navigate>
-                               <a href="{{route('sportadmin')}}" wire:navigate>{{ __('SPORT') }}</a>
+                               {{ __('SPORT') }}
                            </x-nav-link> 
                         
                             <x-nav-link>
-                                <a href="" wire:navigate >{{ __('Contact Us') }}</a>
+                                {{ __('Contact Us') }}
                             </x-nav-link>
                            
                        </div>
