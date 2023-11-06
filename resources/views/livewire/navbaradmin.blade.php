@@ -16,15 +16,16 @@
                                <a href="{{route('musicadmin')}}" wire:navigate>{{ __('MUSIC') }}</a>
                            </x-nav-link>
            
-                           <x-nav-link>
-                              <a href="{{route('admin')}}" wire:navigate> {{ __('STORIES') }}</a>
+                           <x-nav-link :href="route('admin')" :active="request()->routeIs('admin')" wire:navigate>
+                              {{-- <a href="{{route('admin')}}" wire:navigate> {{ __('STORIES') }}</a> --}}
+                              {{ __('STORIES') }}
                            </x-nav-link>
            
-                           <x-nav-link>
-                               <a href="{{route('newsadmin')}}" wire:navigate>{{ __('NEWS') }}</a>
+                           <x-nav-link :href="route('newsadmin')" :active="request()->routeIs('newsadmin')" wire:navigate>
+                               {{ __('NEWS') }}
                            </x-nav-link>
            
-                           <x-nav-link>
+                           <x-nav-link :href="route('sportadmin')" :active="request()->routeIs('sportsadmin')" wire:navigate>
                                <a href="{{route('sportadmin')}}" wire:navigate>{{ __('SPORT') }}</a>
                            </x-nav-link> 
                         
