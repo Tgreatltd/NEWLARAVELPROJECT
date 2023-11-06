@@ -42,7 +42,8 @@
 
         <div class="mb-4">
             <label for="image" class="block text-gray-700 text-sm font-bold mb-2 w-full">Upload Image</label>
-            <input wire:model="image" type="file" name="image" id="image" class="w-full py-2 px-3 border rounded" accept="image/*">
+            <input wire:model="image" type="file" name="image" id="image" class="w-full py-2 px-3 border rounded bg-red-800"
+             accept="image/*" value="{{$storyId->image}}" placeholder="imageeeee">
         @error('image')
            <small class="text-red-600">{{$message}}</small> 
         @enderror
