@@ -12,7 +12,7 @@
      <div> @livewire('navbaradmin')</div>
 
      <div> @livewire('adminpage')</div> 
-       
+        
 </div> 
 </body>
 </html>
