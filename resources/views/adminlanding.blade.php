@@ -11,7 +11,7 @@
     <div class="container mx-auto p-5 bg-gray-200">
      <div> @livewire('navbaradmin')</div>
 
-     <div> @livewire('adminpage')</div>
+     <div> @livewire('adminpage')</div> 
 
 </div> 
 </body>
