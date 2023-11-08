@@ -7,21 +7,25 @@ use Livewire\Component;
 
 class EditStoryAdmin extends Component
 {
-    public $id, $storyId;
+    public $id, $storyId, $user;
 
-    public function mount($id){
-     $this->id=$id;
-     $this->storyId=Blogger::find($id);
-
-    
+    public function mount($id)
+    {
+        $this->id = $id;
+        $this->storyId = Blogger::find($id);
     }
-    public function update(){
-        if ($this->storyId) {
-            $this->validate([
-                'title' => 'required|string',
-                'description' => 'required|string',
-            ]);
-         }
+    public function update($id)
+    {
+        $this->validate([
+            'title' => 'required|string',
+            'description' => 'required|string',
+        ]);
+
+        $this->user=Blogger::find($id);
+
+        if ($this->user) {
+            
+        }
     }
 
     public function render()
