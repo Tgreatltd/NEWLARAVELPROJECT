@@ -24,7 +24,9 @@ class EditStoryAdmin extends Component
         $this->user=Blogger::find($id);
 
         if ($this->user) {
-            
+          $this->user->title=['title'] ;
+          $this->user->description=['description'] ;
+          $this->user->save();
         }
     }
 
