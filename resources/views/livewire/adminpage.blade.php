@@ -72,7 +72,7 @@
                     <td class="px-6 py-4 whitespace-no-wrap bg-green-300"><img style="height:50px; width:50px"src="{{ asset('storage/'. $content->image) }}" alt=""></td>
                     <td class="px-6 py-4 whitespace-no-wrap bg-red-300">
                         <div class="flex space-x-2">
-                            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded"><a href="{{route('storyedit/'.$content->id)}}" wire:navigate>EDIT</a></button>
+                            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded"><a href="{{url('storyedit/'.$content->id)}}" wire:navigate>EDIT</a></button>
                         <button wire:click="delete" type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded">DELETE</button>
                         </div>
                     </td>
