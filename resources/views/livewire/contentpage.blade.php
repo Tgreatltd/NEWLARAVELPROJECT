@@ -10,7 +10,6 @@
                         <div class=" flex items-center justify-center bg-gray-500 mb-4" style="margin-bottom:10px;height:50px;width: 100%;"><h1 class="text-white">{{$user->title}}</h1></div>
                         <div style="width: 100%; height:130px;"> <h1 class="text-white">{{$user->description}}</h1></div>
                     </div>
-                    
                 </a>
             </div> 
 
