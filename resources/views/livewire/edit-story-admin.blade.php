@@ -2,7 +2,7 @@
     <h1 class="text-blue-700">STORIES ADMIN PAGE</h1>
     <div>
         @if (session()->has('success'))
-        <h1 class="text-blue-700">{{session()->get('success')}}</h1>
+        <h1 class="text-green-800">{{session()->get('success')}}</h1>
     @endif
 
     @if (session()->has('error'))
