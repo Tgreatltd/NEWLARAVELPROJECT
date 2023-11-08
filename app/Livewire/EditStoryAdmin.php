@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class EditStoryAdmin extends Component
 {
-    public $id, $storyId, $user, $title, $description;
+    public $id, $storyId, $user, $title, $description, $storyline;
 
     public function mount($id)
     {
@@ -20,6 +20,7 @@ class EditStoryAdmin extends Component
     $data = $this->validate([
         'title' => 'required|string',
         'description' => 'required|string',
+        'storyline' => 'required|string',
     ]);
 
     if ($this->storyId) {
