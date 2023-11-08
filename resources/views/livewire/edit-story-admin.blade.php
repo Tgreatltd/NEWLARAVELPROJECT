@@ -32,7 +32,7 @@
 
         <div class="mb-4">
             <label for="storyline" class="block text-gray-700 text-sm font-bold mb-2 w-full">Storyline</label>
-            <textarea wire:model="storyline" name="storyline" class="w-full py-2 px-3 border rounded" rows="4"
+            <textarea wire:model="storyline" name="storyline" class="w-full py-2 px-3 border rounded" rows="8"
              placeholder="Enter storyline">{{$storyId->storyline}}</textarea>
             @error('storyline')
             <small class="text-red-800">{{$message}}</small> 
