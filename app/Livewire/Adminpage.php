@@ -33,6 +33,10 @@ class Adminpage extends Component
         session()->flash('success', 'uploaded successfully');
     }
 
+    public function delete(){
+        
+    }
+
     public function render()
     {
         return view('livewire.adminpage', ['contents'=>Blogger::all()]);
