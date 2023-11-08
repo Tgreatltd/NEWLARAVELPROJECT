@@ -30,7 +30,7 @@
         </div>
        
 
-        <div class="mb-4">
+        {{-- <div class="mb-4">
             <label for="storyline" class="block text-gray-700 text-sm font-bold mb-2 w-full">Storyline</label>
             <textarea wire:model="storyline" name="storyline" id="storyline" class="w-full py-2 px-3 border rounded" rows="4"
              placeholder="Enter storyline" value="{{$storyId->storyline}}"></textarea>
@@ -47,7 +47,7 @@
         @error('image')
            <small class="text-red-600">{{$message}}</small> 
         @enderror
-        </div>  
+        </div>   --}}
         
         <div class="mb-4">
             <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Update</button>
