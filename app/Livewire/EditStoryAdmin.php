@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class EditStoryAdmin extends Component
 {
-    public $id, $storyId, $user;
+    public $id, $storyId, $user, $title, $description;
 
     public function mount($id)
     {
