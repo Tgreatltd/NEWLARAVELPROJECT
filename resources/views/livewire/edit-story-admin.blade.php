@@ -21,7 +21,7 @@
         </div>
 
         <div class="mb-4">
-            <label for="storyline" class="block text-gray-700 text-sm font-bold mb-2 w-full">Description</label>
+            <label for="description" class="block text-gray-700 text-sm font-bold mb-2 w-full">Description</label>
             <input wire:model="description" name="description" id="description"  class="w-full py-2 px-3 border rounded" 
             placeholder="Enter description" value="{{$storyId->description}}">
             @error('description')

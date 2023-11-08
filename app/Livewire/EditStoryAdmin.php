@@ -14,20 +14,20 @@ class EditStoryAdmin extends Component
         $this->id = $id;
         $this->storyId = Blogger::find($id);
     }
-    public function update($id)
+    public function update()
     {
         $this->validate([
-            'title' => 'required|string',
-            'description' => 'required|string',
+            'title' =>'required|string',
+            'description' =>'required|string',
         ]);
+        // $this->id = $id;
+        // $this->user=Blogger::find($id);
 
-        $this->user=Blogger::find($id);
-
-        if ($this->user) {
-          $this->user->title=['title'] ;
-          $this->user->description=['description'] ;
-          $this->user->save();
-        }
+        // if ($this->user) {
+        //   $this->user->title=['title'] ;
+        //   $this->user->description=['description'] ;
+        //   $this->user->save();
+        // }
     }
 
     public function render()
