@@ -9,7 +9,7 @@ use Livewire\Features\SupportFileUploads\WithFileUploads;
 class Adminpage extends Component
 {
     use WithFileUploads;
-    public $storyline, $title, $description, $image, $imageName;
+    public $storyline, $title, $description, $image, $imageName, $id, $deleteId;
     
     public function saveImage()
     {
@@ -33,8 +33,10 @@ class Adminpage extends Component
         session()->flash('success', 'uploaded successfully');
     }
 
-    public function delete(){
-        
+    public function delete($id){
+     $this->id=$id;
+     $this->deleteId=Blogger::find($id);
+
     }
 
     public function render()
