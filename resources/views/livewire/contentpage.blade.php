@@ -1,7 +1,7 @@
-<div>
+<div class="">
     {{-- <div class="container mx-auto max-w-screen-lg mt-8"></div> --}}
-    <div class="container max-w-screen-lg mx-auto mt-8 ">
-        <div class="flex flex-wrap space-x-4">
+    <div class="container max-w-screen mx-auto">
+        <div class="flex flex-wrap justify-between">
             @foreach ($users as $user)
     
             <div class="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 h-[55vh] bg-green-100 mb-4 p-4">
