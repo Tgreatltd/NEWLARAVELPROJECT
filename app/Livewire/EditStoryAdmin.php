@@ -25,10 +25,19 @@ class EditStoryAdmin extends Component
         'description' => 'required|string',
         'storyline' => 'required|string',
     ]);
-
+    
     if ($this->storyId) {
+        if ($this->image) {
+            // Handle the image upload and storage
+            $imagePath = $this->image->store('images', 'public');
+
+            // Update the image path in the database
+            $this->storyId->image = $imagePath;
+        }
+        
         $this->storyId->title = $data['title'];
         $this->storyId->description = $data['description'];
+        $this->storyId->storyline = $data['storyline'];
         $this->storyId->save();
     }
     session()->flash('success', 'Updated successfully');
