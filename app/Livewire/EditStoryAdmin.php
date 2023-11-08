@@ -17,8 +17,6 @@ class EditStoryAdmin extends Component
         $this->validate([
             'title' => 'required|string',
             'storyline' => 'required|string',
-            'description' => 'required|string',
-             'image' => 'image|max:1024' // Adjust validation rules as needed
         ]);
      }
     }
