@@ -15,23 +15,21 @@ class EditStoryAdmin extends Component
         $this->storyId = Blogger::find($id);
     }
 
-    public function update($id)
-    {
-        $data = $this->validate([
-            'title' => 'required|string',
-            'description' => 'required|string',
-        ]);
-    
-        $user = Blogger::find($id);
-    
-        if ($user) {
-            $user->title = $data['title'];
-            $user->description = $data['description'];
-            $user->save();
-        }
-    
-        return redirect()->route('editStoriesadmin'); // Redirect to a specific route after the update.
+    public function update()
+{
+    $data = $this->validate([
+        'title' => 'required|string',
+        'description' => 'required|string',
+    ]);
+
+    if ($this->storyId) {
+        $this->storyId->title = $data['title'];
+        $this->storyId->description = $data['description'];
+        $this->storyId->save();
     }
+
+    return redirect()->route('editStoriesadmin'); // Redirect to a specific route after the update.
+}
 
     public function render()
     {
