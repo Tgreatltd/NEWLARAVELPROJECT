@@ -13,6 +13,9 @@ class EditStoryAdmin extends Component
     {
         $this->id = $id;
         $this->storyId = Blogger::find($id);
+        $this->title=$this->storyId->title;
+        $this->description=$this->storyId->description;
+        $this->storyline=$this->storyId->storyline;
     }
 
     public function update()
@@ -28,8 +31,8 @@ class EditStoryAdmin extends Component
         $this->storyId->description = $data['description'];
         $this->storyId->save();
     }
-
-    return redirect()->route('editStoriesadmin'); // Redirect to a specific route after the update.
+    session()->flash('success', 'Updated successfully');
+    return redirect()->back(); // Redirect to a specific route after the update.
 }
 
     public function render()
