@@ -16,7 +16,7 @@ class EditStoryAdmin extends Component
      if ($this->storyId) {
         $this->validate([
             'title' => 'required|string',
-            'storyline' => 'required|string',
+            'description' => 'required|string',
         ]);
      }
     }
