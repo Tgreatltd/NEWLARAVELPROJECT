@@ -18,6 +18,7 @@ class EditStoryAdmin extends Component
         $this->title=$this->storyId->title;
         $this->description=$this->storyId->description;
         $this->storyline=$this->storyId->storyline;
+        $this->image=$this->storyId->image;
     }
 
     public function update()
