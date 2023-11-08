@@ -4,9 +4,11 @@ namespace App\Livewire;
 
 use App\Models\Blogger;
 use Livewire\Component;
+use Livewire\Features\SupportFileUploads\WithFileUploads;
 
 class EditStoryAdmin extends Component
 {
+    use WithFileUploads;
     public $id, $storyId, $user, $title, $description, $storyline, $image;
 
     public function mount($id)
