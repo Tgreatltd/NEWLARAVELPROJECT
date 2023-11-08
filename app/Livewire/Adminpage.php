@@ -34,8 +34,12 @@ class Adminpage extends Component
     }
 
     public function delete($id){
-     $this->id=$id;
+
      $this->deleteId=Blogger::find($id);
+     if ($this->deleteId) {
+        $this->deleteId->delete();
+        session()->flash('deleted', 'Content deleted successfully.');
+     }
 
     }
 

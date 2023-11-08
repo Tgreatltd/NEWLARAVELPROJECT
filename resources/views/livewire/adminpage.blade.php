@@ -52,6 +52,12 @@
     </div>
     <br><br>
 
+    <div class="mb-4">
+        @if (session()->has('deleted'))
+        <h1 class="text-green-700">{{session()->get('deleted')}}</h1>
+    @endif
+    </div>
+
     <table class="min-w-full table">
         <thead class="bg-green-500">
             <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-xs leading-4 text-gray-800 uppercase tracking-wider">ID</th>
