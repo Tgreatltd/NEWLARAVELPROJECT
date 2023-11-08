@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class EditStoryAdmin extends Component
 {
-    public $id, $storyId, $user, $title, $description, $storyline, $existingValue;
+    public $id, $storyId, $user, $title, $description, $storyline, $image;
 
     public function mount($id)
     {
@@ -24,6 +24,7 @@ class EditStoryAdmin extends Component
         'title' => 'required|string',
         'description' => 'required|string',
         'storyline' => 'required|string',
+        'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
     ]);
     
     if ($this->storyId) {
@@ -34,7 +35,7 @@ class EditStoryAdmin extends Component
             // Update the image path in the database
             $this->storyId->image = $imagePath;
         }
-        
+
         $this->storyId->title = $data['title'];
         $this->storyId->description = $data['description'];
         $this->storyId->storyline = $data['storyline'];
