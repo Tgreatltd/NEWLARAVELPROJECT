@@ -11,7 +11,7 @@
                         <div style="width: 100%; height:130px;"> <h1 class="text-white">{{$user->description}}</h1></div>
                     </div>
                 </a> 
-            </div>
+            </div> 
 
             @endforeach
         </div> 
