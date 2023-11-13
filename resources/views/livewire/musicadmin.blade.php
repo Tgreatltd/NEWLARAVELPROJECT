@@ -51,6 +51,43 @@
             </form>
             
         </div>
+
+
+        <div class="mb-4">
+            @if (session()->has('deleted'))
+            <h1 class="text-green-700">{{session()->get('deleted')}}</h1>
+        @endif
+        </div>
+    
+        <table class="min-w-full table">
+            <thead class="bg-green-500">
+                <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-xs leading-4 text-gray-800 uppercase tracking-wider">ID</th>
+                <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-xs leading-4 text-gray-800 uppercase tracking-wider">TITLE</th>
+                <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-xs leading-4 text-gray-800 uppercase tracking-wider">DESCRIPTION</th>
+                <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-xs leading-4 text-gray-800 uppercase tracking-wider">STORYLINE</th>
+                <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-xs leading-4 text-gray-800 uppercase tracking-wider">IMAGE</th>
+                <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-xs leading-4 text-gray-800 uppercase tracking-wider">ACTION</th>
+            </thead>
+            <tbody>
+                @foreach ($contents as $content)
+                    <tr class="px-6 py-4 whitespace-no-wrap border-b border-gray-500">
+                        <td class="px-6 py-4 whitespace-no-wrap bg-red-300">{{$content->id}}</td>
+                        <td class="px-6 py-4 whitespace-no-wrap bg-green-100 ">{{$content->title}}</td>
+                        <td class="px-6 py-4 whitespace-no-wrap bg-green-200 ">{{$content->description}}</td>
+                        <td class="px-6 py-4 whitespace-no-wrap bg-red-100 ">{{$content->storyline}}</td>
+                        {{-- <td class="px-4 py-2">{{$content->image}}</td> --}}
+                        <td class="px-6 py-4 whitespace-no-wrap bg-green-300"><img style="height:50px; width:50px"src="{{ asset('storage/'. $content->image) }}" alt=""></td>
+                        <td class="px-6 py-4 whitespace-no-wrap bg-red-300">
+                            <div class="flex space-x-2">
+                                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded"><a href="{{url('storyedit/'.$content->id)}}" wire:navigate>EDIT</a></button>
+                            <button wire:click="delete({{ $content->id }})" type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded">DELETE</button>
+                            </div>
+                        </td>
+                    </tr>
+                @endforeach
+            </tbody> 
+        </table>
+    
         
     </div>
     
