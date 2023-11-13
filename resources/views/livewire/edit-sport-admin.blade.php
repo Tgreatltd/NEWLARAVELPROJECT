@@ -49,7 +49,7 @@
         @error('image')
            <small class="text-red-600">{{$message}}</small> 
         @enderror
-        </div> 
+        </div>
         
 
         <div class="mb-4">
