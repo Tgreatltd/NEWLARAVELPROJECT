@@ -40,6 +40,9 @@ class EditMusicAdmin extends Component
             $this->musicId->storyline=$data['storyline'];
             $this->musicId->image=$data['image'];
             $this->musicId->save();
+
+            session()->flash('success', 'Updated successfully');
+            return redirect()->back(); // Redirect to a specific route after the update.
         }
     }
 
