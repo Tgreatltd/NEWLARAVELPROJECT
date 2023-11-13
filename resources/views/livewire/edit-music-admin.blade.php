@@ -14,7 +14,7 @@
            <div class="mb-4">
             <label for="title" class="block text-gray-700 text-sm font-bold mb-2 w-full">Title</label>
             <input wire:model="title" type="text" name="title" id="title" class="w-full py-2 px-3 border rounded"
-             placeholder="Enter a title" value="{{$sportId->title}}">
+             placeholder="Enter a title" value="{{$musicId->title}}">
             @error('title')
                 <small class="text-red-800">{{$message}}</small>
             @enderror
@@ -23,7 +23,7 @@
         <div class="mb-4">
             <label for="description" class="block text-gray-700 text-sm font-bold mb-2 w-full">Description</label>
             <input wire:model="description" name="description" id="description"  class="w-full py-2 px-3 border rounded" 
-            placeholder="Enter description" value="{{$sportId->description}}">
+            placeholder="Enter description" value="{{$musicId->description}}">
             @error('description')
             <small class="text-red-800">{{$message}}</small>
         @enderror
@@ -33,7 +33,7 @@
         <div class="mb-4">
             <label for="storyline" class="block text-gray-700 text-sm font-bold mb-2 w-full">Storyline</label>
             <textarea wire:model="storyline" name="storyline" class="w-full py-2 px-3 border rounded" rows="8"
-             placeholder="Enter storyline">{{$sportId->storyline}}</textarea>
+             placeholder="Enter storyline">{{$musicId->storyline}}</textarea>
             @error('storyline')
             <small class="text-red-800">{{$message}}</small> 
          @enderror
@@ -45,7 +45,7 @@
         <div class="mb-4">
             <label for="image" class="block text-gray-700 text-sm font-bold mb-2 w-full">Upload Image</label>
             <input wire:model="image" type="file" name="image" id="image" class="w-full py-2 px-3 border rounded bg-red-800"
-             accept="image/*" value="{{$sportId->image}}">
+             accept="image/*" value="{{$musicId->image}}">
         @error('image')
            <small class="text-red-600">{{$message}}</small> 
         @enderror
