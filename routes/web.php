@@ -32,6 +32,7 @@ Route::view('storyline/{id}', 'storypage')->name('storyline');
 // editing adminpage routes
 Route::view('storyedit/{id}', 'editStoriesadmin')->name('storyedit');
 Route::view('sportedit/{id}', 'editsportadmin')->name('sportedit');
+Route::view('musicedit/{id}', 'editMusicAdmin')->name('sportedit');
 
 // Route::get('storyedit/{id}', function ($id) {
 //     return view('editStoriesadmin',compact('id'));
