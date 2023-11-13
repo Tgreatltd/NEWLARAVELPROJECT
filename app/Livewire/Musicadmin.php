@@ -37,6 +37,6 @@ class Musicadmin extends Component
 
     public function render()
     {
-        return view('livewire.musicadmin');
+        return view('livewire.musicadmin', ['contents'=>Musicblogger::all()]);
     }
 }
