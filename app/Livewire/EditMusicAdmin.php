@@ -37,8 +37,8 @@ class EditMusicAdmin extends Component
 
             $this->musicId->title=$data['title'];
             $this->musicId->description=$data['description'];
-            $this->musicId->title=$data['title'];
-            $this->musicId->title=$data['title'];
+            $this->musicId->storyline=$data['storyline'];
+            $this->musicId->image=$data['image'];
         }
     }
 
