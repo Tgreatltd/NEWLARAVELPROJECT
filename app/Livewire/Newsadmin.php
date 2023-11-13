@@ -35,6 +35,6 @@ class Newsadmin extends Component
 
     public function render()
     {
-        return view('livewire.newsadmin');
+        return view('livewire.newsadmin', ['contents'=>News::all()]);
     }
 }
