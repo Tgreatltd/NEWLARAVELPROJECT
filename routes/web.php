@@ -33,6 +33,7 @@ Route::view('storyline/{id}', 'storypage')->name('storyline');
 Route::view('storyedit/{id}', 'editStoriesadmin')->name('storyedit');
 Route::view('sportedit/{id}', 'editsportadmin')->name('sportedit');
 Route::view('musicedit/{id}', 'editMusicAdmin')->name('sportedit');
+Route::view('newsedit/{id}', 'editNewsAdmin')->name('newsedit');
 
 // Route::get('storyedit/{id}', function ($id) {
 //     return view('editStoriesadmin',compact('id'));
