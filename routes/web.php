@@ -30,12 +30,12 @@ Route::view('newsadmin', 'newsadminroute')->name('newsadmin');
 Route::view('storyline/{id}', 'storypage')->name('storyline');
 
 // editing adminpage routes
-Route::view('storyedit/{id}', 'editStoriesadmin')->name('storyedit');
+// Route::view('storyedit/{id}', 'editStoriesadmin')->name('storyedit');
 Route::view('sportedit/{id}', 'editsportadmin')->name('sportedit');
 
-// Route::get('storyedit/{id}', function ($id) {
-//     return view('editStoriesadmin',compact('id'));
-// })->name('storyedit');
+Route::get('storyedit/{id}', function ($id) {
+    return view('editStoriesadmin',compact('id'));
+})->name('storyedit');
 
 
 
