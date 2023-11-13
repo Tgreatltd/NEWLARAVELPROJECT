@@ -1,5 +1,4 @@
-<div>
-    <div class="container mx-auto mt-8">
+ <div class="container mx-auto mt-8">
         <h1 class="text-red-800">SPORTS ADMIN PAGE</h1>
         <div>
             @if (session()->has('success'))
@@ -53,5 +52,4 @@
         </div>
         
     </div>
-    
-</div>
+
