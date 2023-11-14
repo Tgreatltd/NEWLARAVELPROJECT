@@ -39,7 +39,7 @@ class EditNewsAdmin extends Component
             $this->newsId->title = $data['title'];
             $this->newsId->description = $data['description'];
             $this->newsId->storyline = $data['storyline'];
-            $this->newsId->save(); 
+            $this->newsId->save();
 
             session()->flash('success', 'Updated successfully');
             return redirect()->back(); // Redirect to a specific route after the update.
