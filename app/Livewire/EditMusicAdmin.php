@@ -42,7 +42,7 @@ class EditMusicAdmin extends Component
 
             session()->flash('success', 'Updated successfully');
             return redirect()->back(); // Redirect to a specific route after the update.
-        } 
+        }
     }
 
     public function render()
