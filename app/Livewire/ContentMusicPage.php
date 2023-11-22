@@ -8,11 +8,11 @@ use Livewire\Component;
 class ContentMusicPage extends Component
 {
 
-    public $storyId, $id;
+    public $musicId, $id;
     public function mount($id)
     {
         $this->id = $id;
-        $this->storyId = Musicblogger::find($id);
+        $this->musicId = Musicblogger::find($id);
     }
     public function render()
     {
