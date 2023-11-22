@@ -45,6 +45,6 @@ class EditSportAdmin extends Component
 
     public function render()
     {
-        return view('livewire.edit-sport-admin');
+        return view('livewire.edit-sport-admin');  
     }
 }
