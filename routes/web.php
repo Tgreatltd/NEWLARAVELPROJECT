@@ -22,7 +22,7 @@ Route::view('newspage', 'newspage')->name('newspage');
 Route::view('sportpage', 'sportpage')->name('sportpage');
 
 Route::view('storyline/{id}', 'storypage')->name('storyline');
-Route::view('music/{id}', 'contentmusicpage')->name('content');
+Route::view('music/{id}', 'contentmusicpage')->name('music');
 Route::view('news/{id}', 'contentnewspage')->name('news');
 Route::view('sport/{id}', 'contentsportpage')->name('sport');
 
