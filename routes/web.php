@@ -21,13 +21,18 @@ Route::view('musicpage', 'musicpage')->name('musicpage');
 Route::view('newspage', 'newspage')->name('newspage');
 Route::view('sportpage', 'sportpage')->name('sportpage');
 
+Route::view('storyline/{id}', 'storypage')->name('storyline');
+Route::view('music/{id}', 'contentmusicpage')->name('content');
+Route::view('news/{id}', 'contentnewspage')->name('news');
+Route::view('sport/{id}', 'contentsportpage')->name('sport');
+
 // admin pages routes
 
 Route::view('admin', 'adminlanding')->name('admin');
 Route::view('sportadmin', 'sportsadminroute')->name('sportadmin');
 Route::view('musicadmin', 'musicadminroute')->name('musicadmin');
 Route::view('newsadmin', 'newsadminroute')->name('newsadmin');
-Route::view('storyline/{id}', 'storypage')->name('storyline');
+
 
 // editing adminpage routes
 Route::view('storyedit/{id}', 'editStoriesadmin')->name('storyedit');
