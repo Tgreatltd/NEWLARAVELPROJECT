@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,4 +12,13 @@
       @livewire('adminpage')
 </div>
 </body>
-</html>
+</html> --}}
+
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            {{ __('TEEGREAT BLOG') }}
+        </h2>
+    </x-slot>
+    @livewire('adminpage')
+</x-app-layout>
