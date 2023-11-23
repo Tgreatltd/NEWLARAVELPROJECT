@@ -7,8 +7,8 @@
     <title>Document</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body style="background-color:black">
-    <div class="container mx-auto p-5">
+<body>
+    <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
       @livewire('navbar')
 
       <div>
