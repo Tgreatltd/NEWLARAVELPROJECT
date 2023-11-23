@@ -8,7 +8,9 @@
                        {{-- <a >
                            <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
                        </a> --}}
-                       <a href="">TEEGREAT'S BLOG</a>
+                       <x-nav-link :href="route('teegreat')" :active="request()->routeIs('teegreat')" wire:navigate>
+                        {{ __('TEEGREAT BLOG') }}
+                    </x-nav-link>
                    </div>
                    <div class="hidden space-x-12 sm:-my-px sm:ml-20 sm:flex">
                        <x-nav-link :href="route('musicpage')" :active="request()->routeIs('musicpage')" wire:navigate>
