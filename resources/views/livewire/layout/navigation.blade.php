@@ -30,8 +30,28 @@ new class extends Component
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
-                        {{ __('Dashboard') }}
+                        {{ __('TEEGREAT BLOG') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('musicadmin')" :active="request()->routeIs('musicadmin')" wire:navigate>
+                        {{ __('MUSIC') }}
+                      </x-nav-link>
+      
+                      <x-nav-link :href="route('admin')" :active="request()->routeIs('admin')" wire:navigate>
+                         {{-- <a href="{{route('admin')}}" wire:navigate> {{ __('STORIES') }}</a> --}}
+                         {{ __('STORIES') }}
+                      </x-nav-link>
+      
+                      <x-nav-link :href="route('newsadmin')" :active="request()->routeIs('newsadmin')" wire:navigate>
+                          {{ __('NEWS') }}
+                      </x-nav-link>
+      
+                      <x-nav-link :href="route('sportadmin')" :active="request()->routeIs('sportadmin')" wire:navigate>
+                          {{ __('SPORT') }}
+                      </x-nav-link> 
+                   
+                       <x-nav-link>
+                           {{ __('Contact Us') }}
+                       </x-nav-link>
                 </div>
             </div>
 
