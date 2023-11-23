@@ -28,7 +28,9 @@ Route::view('sport/{id}', 'contentsportpage')->name('sport');
 
 // admin pages routes
 
-Route::view('admin', 'adminlanding')->name('admin');
+Route::view('admin', 'adminlanding')
+->middleware(['auth', 'verified'])
+->name('admin');
 Route::view('sportadmin', 'sportsadminroute')->name('sportadmin');
 Route::view('musicadmin', 'musicadminroute')->name('musicadmin');
 Route::view('newsadmin', 'newsadminroute')->name('newsadmin');
