@@ -105,6 +105,36 @@ new class extends Component
             </x-responsive-nav-link>
         </div>
 
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('musicadmin')" :active="request()->routeIs('musicadmin')" wire:navigate>
+                {{ __('MUSIC') }}
+            </x-responsive-nav-link>
+        </div>
+            
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('admin')" :active="request()->routeIs('admin')" wire:navigate>
+                {{ __('STORIES') }}
+            </x-responsive-nav-link>
+        </div>
+
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('newsadmin')" :active="request()->routeIs('newsadmin')" wire:navigate>
+                {{ __('NEWS') }}
+            </x-responsive-nav-link>
+        </div>
+
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('sportadmin')" :active="request()->routeIs('sportadmin')" wire:navigate>
+                {{ __('SPORT') }}
+            </x-responsive-nav-link>
+        </div>
+
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link>
+                {{ __('Contact Us') }}
+            </x-responsive-nav-link>
+        </div>
+
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
             <div class="px-4">
