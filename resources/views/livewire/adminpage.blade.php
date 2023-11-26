@@ -73,7 +73,7 @@
                     <td class="px-6 py-4 whitespace-no-wrap bg-red-300">{{$content->id}}</td>
                     <td class="px-6 py-4 whitespace-no-wrap bg-green-100 ">{{$content->title}}</td>
                     <td class="px-6 py-4 whitespace-no-wrap bg-green-200 ">{{$content->description}}</td>
-                    <td class="px-6 py-4 whitespace-no-wrap bg-red-100 ">{{$content->storyline}}</td>
+                    <td class="px-6 py-4 whitespace-no-wrap bg-red-100 ">{{$content->storyline}}</td> 
                     {{-- <td class="px-4 py-2">{{$content->image}}</td> --}}
                     <td class="px-6 py-4 whitespace-no-wrap bg-green-300"><img style="height:50px; width:50px"src="{{ asset('storage/'. $content->image) }}" alt=""></td>
                     <td class="px-6 py-4 whitespace-no-wrap bg-red-300">
