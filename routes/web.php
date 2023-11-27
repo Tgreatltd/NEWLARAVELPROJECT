@@ -42,7 +42,6 @@ Route::view('newsadmin', 'newsadminroute')
 
 
 // editing adminpage routes
-
 Route::view('storyedit/{id}', 'editStoriesadmin') 
  ->middleware(['auth', 'verified'])->name('storyedit');
 
@@ -54,8 +53,6 @@ Route::view('musicedit/{id}', 'editMusicAdmin')
 
 Route::view('newsedit/{id}', 'editNewsAdmin')
 ->middleware(['auth', 'verified'])->name('newsedit');
-
-
 
 // Route::get('storyedit/{id}', function ($id) {
 //     return view('editStoriesadmin',compact('id'));
