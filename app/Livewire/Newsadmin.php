@@ -11,7 +11,7 @@ class Newsadmin extends Component
     use WithFileUploads;
     public $storyline, $title, $description, $image, $imageName;
     
-    public function saveImage()
+    public function saveImage() 
     {
         $this->validate([
             'title' => 'required|string',
