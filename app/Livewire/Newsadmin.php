@@ -9,7 +9,7 @@ use Livewire\Features\SupportFileUploads\WithFileUploads;
 class Newsadmin extends Component
 {
     use WithFileUploads;
-    public $storyline, $title, $description, $image, $imageName;
+    public $storyline, $title, $description, $image, $imageName; 
     
     public function saveImage() 
     {
