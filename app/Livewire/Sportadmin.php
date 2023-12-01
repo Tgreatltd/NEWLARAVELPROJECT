@@ -36,5 +36,5 @@ class Sportadmin extends Component
     public function render()
     {
         return view('livewire.sportadmin', ['contents'=>Sports::all()]); 
-    }
+    } 
 }
