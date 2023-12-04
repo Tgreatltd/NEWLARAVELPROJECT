@@ -27,7 +27,7 @@ class Sportadmin extends Component
             'storyline' => $this->storyline,
             'description' => $this->description,
             'image' => $this->imageName,
-        ]); 
+        ]);
 
         $this->reset('image');
         session()->flash('success', 'uploaded successfully');
