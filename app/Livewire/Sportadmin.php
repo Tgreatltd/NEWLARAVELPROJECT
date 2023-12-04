@@ -26,7 +26,7 @@ class Sportadmin extends Component
             'title' => $this->title,
             'storyline' => $this->storyline,
             'description' => $this->description,
-            'image' => $this->imageName,
+            'image' => $this->imageName, 
         ]);
 
         $this->reset('image');
