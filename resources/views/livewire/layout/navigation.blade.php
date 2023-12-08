@@ -32,7 +32,7 @@ new class extends Component
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('TEEGREAT BLOG') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('musicadmin')" :active="request()->routeIs('musicadmin')" wire:navigate>
+                    {{-- <x-nav-link :href="route('musicadmin')" :active="request()->routeIs('musicadmin')" wire:navigate>
                         {{ __('MUSIC') }}
                       </x-nav-link>
       
@@ -51,7 +51,7 @@ new class extends Component
                    
                        <x-nav-link>
                            {{ __('Contact Us') }}
-                       </x-nav-link>
+                       </x-nav-link> --}}
                 </div>
             </div>
 
