@@ -32,7 +32,7 @@ Route::view('admin', 'storiesadminroute')
 ->middleware(['auth', 'verified'])->name('admin');
 
 Route::view('sportadmin', 'sportsadminroute')
-->middleware(['auth', 'verified'])->name('sportadmin');
+->middleware(['auth', 'verified'])->name('sportadmin'); 
 
 Route::view('musicadmin', 'musicadminroute')
 ->middleware(['auth', 'verified'])->name('musicadmin');
