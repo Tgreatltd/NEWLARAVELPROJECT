@@ -45,6 +45,6 @@ class Adminpage extends Component
 
     public function render()
     {
-        return view('livewire.adminpage', ['contents'=>Blogger::all()]);
+        return view('livewire.adminpage');
     }
 }
