@@ -68,9 +68,9 @@ Route::view('newsedit/{id}', 'editNewsAdmin')
 
 
 
-Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard'); 
+// Route::view('dashboard', 'dashboard')
+//     ->middleware(['auth', 'verified'])
+//     ->name('dashboard'); 
 
 Route::view('profile', 'profile')
     ->middleware(['auth'])
