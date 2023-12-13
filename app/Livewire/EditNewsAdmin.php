@@ -33,7 +33,7 @@ class EditNewsAdmin extends Component
         if ($this->newsId) {
             if ($this->image) {
                 $imagePath = $this->image->store('images', 'public');
-                $this->newsId->image = $imagePath; 
+                $this->newsId->image = $imagePath;
             }
 
             $this->newsId->title = $data['title'];
