@@ -29,37 +29,37 @@ Route::view('sport/{id}', 'contentsportpage')->name('sport');
 // admin pages routes
 
 Route::view('admin', 'storiesadminroute')
-->middleware(['auth', 'verified'])
+// ->middleware(['auth', 'verified'])
 ->name('admin');
 
 Route::view('sportadmin', 'sportsadminroute')
-->middleware(['auth', 'verified'])
+// ->middleware(['auth', 'verified'])
 ->name('sportadmin'); 
 
 Route::view('musicadmin', 'musicadminroute')
-->middleware(['auth', 'verified'])
+// ->middleware(['auth', 'verified'])
 ->name('musicadmin');
 
 Route::view('newsadmin', 'newsadminroute')
-->middleware(['auth', 'verified'])
+// ->middleware(['auth', 'verified'])
 ->name('newsadmin');
 
 
 // editing adminpage routes
 Route::view('storyedit/{id}', 'editStoriesadmin') 
- ->middleware(['auth', 'verified'])
+//  ->middleware(['auth', 'verified'])
  ->name('storyedit');
 
  Route::view('sportedit/{id}', 'editsportadmin')
-->middleware(['auth', 'verified'])
+// ->middleware(['auth', 'verified'])
 ->name('sportedit');
 
 Route::view('musicedit/{id}', 'editMusicAdmin')
-->middleware(['auth', 'verified'])
+// ->middleware(['auth', 'verified'])
 ->name('sportedit');
 
 Route::view('newsedit/{id}', 'editNewsAdmin')
-->middleware(['auth', 'verified'])
+// ->middleware(['auth', 'verified'])
 ->name('newsedit');
 
 // Route::get('storyedit/{id}', function ($id) {
