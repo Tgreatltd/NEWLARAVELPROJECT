@@ -30,32 +30,12 @@ new class extends Component
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
-                        {{ __('TEEGREAT BLOG') }}
+                        {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('musicadmin')" :active="request()->routeIs('musicadmin')" wire:navigate>
-                        {{ __('MUSIC') }}
-                      </x-nav-link>
-      
-                      <x-nav-link :href="route('admin')" :active="request()->routeIs('admin')" wire:navigate>
-                         {{-- <a href="{{route('admin')}}" wire:navigate> {{ __('STORIES') }}</a> --}}
-                         {{ __('STORIES') }}
-                      </x-nav-link>
-      
-                      <x-nav-link :href="route('newsadmin')" :active="request()->routeIs('newsadmin')" wire:navigate>
-                          {{ __('NEWS') }}
-                      </x-nav-link>
-      
-                      <x-nav-link :href="route('sportadmin')" :active="request()->routeIs('sportadmin')" wire:navigate>
-                          {{ __('SPORT') }}
-                      </x-nav-link> 
-                   
-                       <x-nav-link>
-                           {{ __('Contact Us') }}
-                       </x-nav-link>
                 </div>
             </div>
 
-            <!-- Settings Dropdown --> 
+            <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
@@ -102,36 +82,6 @@ new class extends Component
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
                 {{ __('Dashboard') }}
-            </x-responsive-nav-link>
-        </div>
-
-        <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('musicadmin')" :active="request()->routeIs('musicadmin')" wire:navigate>
-                {{ __('MUSIC') }}
-            </x-responsive-nav-link>
-        </div>
-            
-        <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('admin')" :active="request()->routeIs('admin')" wire:navigate>
-                {{ __('STORIES') }}
-            </x-responsive-nav-link>
-        </div>
-
-        <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('newsadmin')" :active="request()->routeIs('newsadmin')" wire:navigate>
-                {{ __('NEWS') }}
-            </x-responsive-nav-link>
-        </div>
-
-        <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('sportadmin')" :active="request()->routeIs('sportadmin')" wire:navigate>
-                {{ __('SPORT') }}
-            </x-responsive-nav-link>
-        </div>
-
-        <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link>
-                {{ __('Contact Us') }}
             </x-responsive-nav-link>
         </div>
 
