@@ -24,4 +24,4 @@
         </h2>
     </x-slot>
     <div> @livewire('musicadmin')</div>
-</x-app-layout>
+</x-app-layout> 
