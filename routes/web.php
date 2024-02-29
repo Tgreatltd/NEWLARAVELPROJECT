@@ -33,15 +33,15 @@ Route::view('admin', 'storiesadminroute')
 ->name('admin');
 
 Route::view('sportadmin', 'sportsadminroute')
-->middleware(['auth', 'verified'])
+// ->middleware(['auth', 'verified'])
 ->name('sportadmin'); 
 
 Route::view('musicadmin', 'musicadminroute')
-->middleware(['auth', 'verified'])
+// ->middleware(['auth', 'verified'])
 ->name('musicadmin');
 
 Route::view('newsadmin', 'newsadminroute')
-->middleware(['auth', 'verified'])
+// ->middleware(['auth', 'verified'])
 ->name('newsadmin');
 
 
