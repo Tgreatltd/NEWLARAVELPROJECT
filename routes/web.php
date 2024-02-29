@@ -29,7 +29,7 @@ Route::view('sport/{id}', 'contentsportpage')->name('sport');
 // admin pages routes
 
 Route::view('admin', 'storiesadminroute')
-->middleware(['auth', 'verified'])
+// ->middleware(['auth', 'verified'])
 ->name('admin');
 
 Route::view('sportadmin', 'sportsadminroute')
